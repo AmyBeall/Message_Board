@@ -1,0 +1,24 @@
+#indexPanel{
+  margin-top: 150px;
+  text-align: center;
+}
+.panel a.button{
+  background-color: limegreen;
+  width: 150px;
+  font-size: 18px;
+}
+.caption{
+  text-align: left;
+}
+div.users{
+	width: 150px;
+	/*display: inline-block !important;*/
+	vertical-align: top;
+	position: absolute;
+	top: 50px;
+	left: 25px;
+}
+.hidden{
+	display: none;
+}
+
