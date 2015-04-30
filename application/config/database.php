@@ -3,21 +3,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-if(ENVIRONMENT == 'production')
-{
-	$db['default']['hostname'] = 'localhost';
-	$db['default']['username'] = 'root';
-	$db['default']['password'] = '';
-	$db['default']['database'] = '';
-}
-else
-{
-	$db['default']['hostname'] = 'localhost';
-	$db['default']['username'] = 'root';
-	$db['default']['password'] = 'root';
-	$db['default']['database'] = 'dashboard';
-}
-
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'amy';
+$db['default']['password'] = 'amylouise';
+$db['default']['database'] = 'dashboard';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

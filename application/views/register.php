@@ -77,10 +77,10 @@
             </div>
             <div class="row collapse prefix-radius">
               <div class="small-4 columns reg_form">
-                <span class="prefix">Confirm Password</span>
+                <span class="prefix confirm">Confirm Password</span>
               </div>
               <div class="small-8 columns">
-                <input type='password' name='confirm'>
+                <input class="confirm" type='password' name='confirm'>
               </div>
             </div>
             <input class="small button" type='submit' value='Submit'>

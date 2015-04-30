@@ -40,7 +40,7 @@
                 <span class="prefix">Username</span>
               </div>
               <div class="small-8 columns">
-                <input type='text' name='user_name' value='sShady'>
+                <input type='text' name='user_name'>
               </div>
             </div>
             <div class="row collapse prefix-radius">
@@ -48,7 +48,7 @@
                 <span class="prefix">Password</span>
               </div>
               <div class="small-8 columns">
-                <input type='password' name='password' value='12345678'>
+                <input type='password' name='password'>
               </div>
             </div>
           <input class="small button" type="submit" value="submit">
