@@ -67,11 +67,11 @@ class Dashboards extends CI_Controller {
 	}
 	public function admin_update_user_info($id)
 	{
-		$user_info['email'] = escape_this_string($this->input->post('email'));
-		$user_info['user_name'] = escape_this_string($this->input->post('user_name'));
-		$user_info['first_name'] = escape_this_string($this->input->post('first_name'));
-		$user_info['last_name'] = escape_this_string($this->input->post('last_name'));
-		if(escape_this_string($this->input->post('level') == "admin"))
+		$user_info['email'] = ($this->input->post('email');
+		$user_info['user_name'] = ($this->input->post('user_name');
+		$user_info['first_name'] = ($this->input->post('first_name');
+		$user_info['last_name'] = ($this->input->post('last_name');
+		if(($this->input->post('level') == "admin")
 		{
 			$user_info['level'] = 9;
 		}
