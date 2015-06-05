@@ -1,26 +1,12 @@
-<?php
-function format_interval($interval) {
-    $result = "";
-    if ($interval->y) { $result .= $interval->format("%y years "); }
-    if ($interval->m) { $result .= $interval->format("%m months "); }
-    if ($interval->d) { $result .= $interval->format("%d days "); }
-    if ($interval->h) { $result .= $interval->format("%h hours "); }
-    if ($interval->i) { $result .= $interval->format("%i minutes "); }
-    if ($interval->s) { $result .= $interval->format("%s seconds "); }
-
-    return $result;
-}
-$now = new DateTime(date("Y-m-d H:i:s"));
-?>
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Message Board</title>
-    <link rel="stylesheet" href="../../assets/foundationUD/css/foundation.css" />
-    <link rel="stylesheet" href="../../assets/CSS/UD.css" />
-    <script src="../../assets/foundationUD/js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="./foundationUD/css/foundation.css" />
+    <!-- <link rel="stylesheet" href="../../assets/CSS/UD.css" /> -->
+    <script src="./foundationUD/js/vendor/modernizr.js"></script>
   </head>
   <body>
   	 
@@ -158,16 +144,10 @@ $now = new DateTime(date("Y-m-d H:i:s"));
 	      </div>
 	    </div> 
  
-	<script src="../../assets/foundationUD/js/vendor/jquery.js"></script>
-    <script src="../../assets/foundationUD/js/foundation.min.js"></script>
+	<script src="./foundationUD/js/vendor/jquery.js"></script>
+    <script src="./foundationUD/js/foundation.min.js"></script>
     <script>
-      $(document).foundation({
-
-      	offcanvas : {
-	  		open_method: 'overlap', 
-	    	close_on_click : true
- 		}
-      });
+      $(document).foundation();
     </script>
 
   </body>

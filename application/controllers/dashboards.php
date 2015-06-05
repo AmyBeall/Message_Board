@@ -243,6 +243,7 @@ class Dashboards extends CI_Controller {
 		$user_data['user'] = $this->Dashboard->get_user_by_id($id);
 		$user_data['comments'] = $this->Dashboard->get_comments_by_id($id);
 		$user_data['messages'] = $this->Dashboard->get_messages_by_id($id);
+		$user_data['all_users'] = $this->Dashboard->all();
 		$this->load->view('message_board', $user_data);
 	}
 	function comment($id)
@@ -255,6 +256,7 @@ class Dashboards extends CI_Controller {
 		$user_data['user'] = $this->Dashboard->get_user_by_id($id);
 		$user_data['comments'] = $this->Dashboard->get_comments_by_id($id);
 		$user_data['messages'] = $this->Dashboard->get_messages_by_id($id);
+		$user_data['all_users'] = $this->Dashboard->all();
 		$this->load->view('message_board', $user_data);
 	}
 
