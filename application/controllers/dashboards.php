@@ -51,8 +51,13 @@ class Dashboards extends CI_Controller {
 	{
 		if($id == NULL)
 		{
-			$id = $this->session->userdata['id'];
+			$admin_id = 1;
+			$id = $admin_id;
 		}
+		else
+		{
+			$id = $this->session->userdata['id'];
+		}	
 		$user_data['user'] = $this->Dashboard->get_user_by_id($id);
 		$user_data['messages'] = $this->Dashboard->get_messages_by_id($id);
 		$user_data['comments'] = $this->Dashboard->get_comments_by_id($id);
